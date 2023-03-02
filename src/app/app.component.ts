@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'petshop';
+  rating: number = 3;
+  starCount: number = 5;
+
+  onRatingChanged(rating: number) {
+    this.rating = rating;
+  }
 }

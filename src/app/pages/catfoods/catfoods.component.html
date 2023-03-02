@@ -1,0 +1,19 @@
+<div class="container" >
+    <div>
+      <div class="row">
+      <div class="col" *ngFor="let item of catfoods">
+        <div class="card" style="width: 18rem;">
+          <img src="{{item.image}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">{{item.details}}</p>
+            <!--<a (click)="gotohere(item.name)" class="btn btn-primary">Buy now</a>-->
+             <button type="button" class="btn btn-secondary btn-lg btn-block text-dark">Add to cart</button>
+            <button type="button" (click)="gotohere(item.name)" class="btn btn-secondary btn-lg btn-block "class="text-dark">Buy Now</button> 
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
